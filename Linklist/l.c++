@@ -26,26 +26,26 @@ class Node {
 
     for(int i = 0 ; i < 7 ; i++) 
     {
-        if (head == NULL) 
-        {
+        if(head == NULL) {
             head = new Node (arr[i]);
-        }else {
+        }
+        else {
             Node *temp ;
-            temp = new Node (arr[i]) ;
-            temp->next  = head ;
+            temp = new Node(arr[i]) ;
+            temp->next = head ;
             head = temp ;
         }
     }
 
     // print value 
 
-
-    Node *temp = head ;
-    while (temp != NULL) {
-        cout << temp-> data <<" " ;
+    Node *temp ;
+    temp = head ;
+    while(temp != NULL) {
+        cout << temp->data << " " ;
         temp = temp->next ;
     }
-    return 0 ; 
+    return 0 ;
 
 
  }
