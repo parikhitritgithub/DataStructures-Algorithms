@@ -4,7 +4,7 @@
 using namespace std;
 int main () {
     int vertex , edges ;
-    cin >> vertex >> edges; 
+    cin >> vertex >> edges;
     
     vector< vector <bool> > adj (vertex , vector<bool>(vertex , 0)) ;
 
@@ -22,4 +22,4 @@ int main () {
             cout << endl ; 
         }
     }
-} 
+}
