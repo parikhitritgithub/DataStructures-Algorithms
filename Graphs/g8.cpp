@@ -5,19 +5,19 @@ int main () {
 
     int vertex , edges ;
     cin >> vertex >> edges ;
-    vector<int> adj [vertex] ; 
+    vector<pair<int, int > > adj [vertex] ; 
 
-    int u , v ;
+    int u , v , weight ;
     for(int i = 0 ; i< edges ; i++ ) 
     {
-        cin >> u >> v ;
-        adj[u].push_back(v);
+        cin >> u >> v >> weight ;
+        adj[u].push_back(make_pair(v,weight));
     }
     for(int i = 0 ; i<vertex ;i++) 
     {
         cout << i << "->" ;
         for(int j = 0 ; j < adj[i].size();j++){
-            cout << adj[i][j] <<" ";
+            cout << adj[i][j].first <<" " << adj[i][j].second;
             cout << endl;
 
         }
