@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+ // memorization method (top down) 
 int fun(int n , vector<int> &dp ) { 
     if(n<=1 ) return n ; 
 
